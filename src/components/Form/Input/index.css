@@ -1,0 +1,23 @@
+.InputContainer{
+    display: flex;
+    height: 4.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 5px 0px;
+    width: 100%;
+}
+
+.FormInput{
+    width: -webkit-fill-available;
+    height: 2rem;
+    border: 2px var(--gray) solid;
+    border-radius: 5px;
+    padding: 5px;
+    transition: .5s
+}
+
+.FormInput:focus{
+    border-color: var(--red);
+    outline-width: 0;
+}

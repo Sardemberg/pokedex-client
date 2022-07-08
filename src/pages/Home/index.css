@@ -1,0 +1,24 @@
+.Home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Home img{
+    height: 60vh;
+    align-self: center;
+    max-width: 100%;
+}
+
+.Home .login{
+    width: 75px;
+}
+
+.Home .GroupButtons{
+    margin: auto;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+}

@@ -1,0 +1,29 @@
+.Button{
+   padding: 12.5px;
+   width: 100%;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: .4s;
+   margin: 5px 0px;
+}
+
+.Button:active{
+    background-color: green;
+}
+
+.Button[variant="primary"]{
+    background-color: var(--red);
+    color: white;
+    border: solid var(--red) 2px;
+}
+
+.Button[variant="outline-primary"]{
+    background-color: var(--background-primary);
+    color: var(--red);
+    border: solid var(--red) 2px;
+}
+
+.Button[variant="outline-primary"]:hover{
+    background-color: var(--red);
+    color: var(--background-primary);
+}
