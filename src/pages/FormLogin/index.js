@@ -1,32 +1,44 @@
 import React from "react"
+import { useForm } from "react-hook-form"
+import auth from "../../services/auth"
 import "./index.css"
 import Input from "../../components/Form/Input"
 import Button from "../../components/Button"
 import PixelTitle from "../../components/PixelTitle"
 
 export default function FormLogin(){
+    const {register, handleSubmit} = useForm();
+
+    const submit = async data => {
+        const response = await auth.login(data)
+    }
+
     return(
-        <div className="FormLogin">
+        <div className="FormLogin" onSubmit={handleSubmit(submit)}>
             <div className="ContainerTitle">
                 <PixelTitle>
                     POKEDEX
                 </PixelTitle>
             </div>
-            <div className="Form">
+            <form className="Form">
                 <Input 
-                    name='email' 
                     placeholder='Email' 
                     type="email"
                     showLabel 
                     textLabel="Informe seu email:"
+                    register={register('email', {
+                        required: true
+                    })}
                 />
 
                 <Input 
-                    name='senha' 
                     type="password"
                     placeholder='Senha' 
                     showLabel 
                     textLabel="Informe sua senha:"
+                    register={register('password', {
+                        required: true
+                    })}
                 />
 
                 <Button variant='primary'>
@@ -36,7 +48,7 @@ export default function FormLogin(){
                 <Button variant='outline-primary'>
                     Registre-se
                 </Button>
-            </div>
+            </form>
         </div>
     )
 }

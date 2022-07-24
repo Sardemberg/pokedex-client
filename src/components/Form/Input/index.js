@@ -1,22 +1,23 @@
 import React from "react"
 import "./index.css"
 
-export default function Input({type, placeholder, customStyle, name, showLabel = false, textLabel}){
+export default function Input(props){
     return(
-        <div class="InputContainer">
+        <div className="InputContainer">
             {
-                showLabel && (
+                props.showLabel && (
                     <label>
-                        {textLabel}
+                        {props.textLabel}
                     </label>
                 )
             }
             <input 
-                class="FormInput" 
-                type={type} 
-                placeholder={placeholder} 
-                style={customStyle}
-                name={name}
+                className="FormInput" 
+                type={props.type}
+                name={props.name}
+                placeholder={props.placeholder}
+                style={props.style}
+                {...props.register}
             />
         </div>
     )
