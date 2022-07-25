@@ -18,3 +18,17 @@
     align-items: center;
     justify-content: center;
 }
+
+@media(max-width: 900px){
+    .FormLogin{
+        flex-direction: column;
+    }
+
+    .Form{
+        width: 90vw;
+    }
+
+    .ContainerTitle{
+        width: 90vw;
+    }
+}

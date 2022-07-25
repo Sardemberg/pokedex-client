@@ -1,16 +1,27 @@
-import React from "react"
+import React, { useContext } from "react"
 import { useForm } from "react-hook-form"
 import auth from "../../services/auth"
 import "./index.css"
 import Input from "../../components/Form/Input"
 import Button from "../../components/Button"
 import PixelTitle from "../../components/PixelTitle"
+import { AuthContext } from "../../contexts/authContext"
 
 export default function FormLogin(){
     const {register, handleSubmit} = useForm();
 
+    const [state, dispatch] = useContext(AuthContext)
+
     const submit = async data => {
         const response = await auth.login(data)
+
+        dispatch({
+            data: {
+                ...response.data.data, 
+                access_token: response.headers['access-token']
+            },
+            type: "SET_DATA"
+        })
     }
 
     return(
