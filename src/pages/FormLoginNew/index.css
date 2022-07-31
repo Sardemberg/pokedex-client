@@ -1,0 +1,24 @@
+.FormLoginNew{
+    font-family: 'Montserrat', sans-serif;
+    width: 70vw;
+    height: 100vh;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContainerTitle h2{
+    font-weight: 700;
+}
+
+.ContainerTitle{
+    width: 30vw;
+}
+
+.Form{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
