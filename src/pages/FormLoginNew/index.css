@@ -1,18 +1,29 @@
 .FormLoginNew{
     font-family: 'Montserrat', sans-serif;
+    color: #1F1F1F;;
     width: 70vw;
     height: 100vh;
     margin: auto;
     align-items: center;
     justify-content: center;
-}
-
-.ContainerTitle h2{
-    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .ContainerTitle{
-    width: 30vw;
+    width: 40vw;
+    text-align: center;
+}
+
+.ContainerTitle h1{
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.FormLoginNew p{
+    margin-top: 30px;
+    font-weight: 400;
 }
 
 .Form{
@@ -22,3 +33,4 @@
     align-items: center;
     justify-content: center;
 }
+

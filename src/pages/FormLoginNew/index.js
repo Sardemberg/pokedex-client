@@ -1,16 +1,20 @@
-import React from "react"
+import React, {useEffect} from "react"
 import "./index.css"
-import Input from "../../components/Form/Input"
-import Button from "../../components/Button"
-import PixelTitle from "../../components/PixelTitle"
+import Input from "../../components_new/Form/Input"
+import Button from "../../components_new/Button"
+import PixelTitle from "../../components_new/PixelTitle"
 
-export default function FormLogin(){
+export default function FormLoginNew(){
+    useEffect(() => {
+        document.title = "Pokédex | Login"
+    }, [])
+
     return(
         <div className="FormLoginNew">
             <div className="ContainerTitle">
-                <h2>
+                <h1>
                     Entrar
-                </h2>
+                </h1>
             </div>
             <div className="Form">
                 <Input 
@@ -32,11 +36,11 @@ export default function FormLogin(){
                 <Button variant='primary'>
                     Login
                 </Button>
-                
-                <Button variant='outline-primary'>
-                    Registre-se
-                </Button>
+
             </div>
+            
+            <p>Esqueceu a senha?</p>
+
         </div>
     )
 }

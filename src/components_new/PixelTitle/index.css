@@ -1,0 +1,10 @@
+@font-face {
+    font-family: '3Dventure';
+    src: url('../../../public/fonts/3Dventure.ttf');
+}
+
+.PixelTitle{
+    color: #DC0A2D;
+    font-family: '3Dventure';
+    font-size: 55px;
+}

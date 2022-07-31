@@ -1,0 +1,42 @@
+.InputContainer{
+    font-family: 'Montserrat', sans-serif;
+    height: 5rem;
+    margin: 15px;
+    width: 100%;   
+}
+
+.InputContainer label{
+    color: #1F1F1F;;
+    font-size: 15px;
+}
+
+.FormInput{
+    width: -webkit-fill-available;
+    height: 2rem;
+    background: rgba(31, 31, 31, 0);
+    border: 2px solid rgba(31, 31, 31, 0.25);;
+    border-radius: 52px;
+    padding: 5px 25px;
+    transition: .5s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.075);
+    
+}
+
+.FormInput::placeholder{
+    letter-spacing: 1px;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.FormInput:focus{
+    border-color: var(--red);
+    outline-width: 0;
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .InputContainer{
+        width: 70vw;
+    }
+    
+  }
