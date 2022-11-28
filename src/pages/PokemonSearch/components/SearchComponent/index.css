@@ -1,0 +1,38 @@
+.SearchComponent{
+    display: flex;
+    width: 100%;
+}
+
+.SearchComponent input{
+    background-color: white;
+    border-top-left-radius: 41.5px;
+    border-bottom-left-radius: 41.5px;
+    height: 75px;
+    width: 100%;
+    color: var(--gray);
+    border: 3px solid var(--gray);
+    border-right: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 0px 30px;
+}
+
+.SearchComponent input::placeholder{
+    color: var(--gray);
+}
+
+.SearchComponent button{
+    height: 75px;
+    background-color: white;
+    border: 3px var(--gray) solid;
+    border-left: none;
+    color: var(--gray);
+    width: 80px;
+    border-top-right-radius: 41.5px;
+    border-bottom-right-radius: 41.5px;
+}
+
+.SearchComponent button svg{
+    font-size: 40px;
+}
