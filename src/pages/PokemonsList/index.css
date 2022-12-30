@@ -1,0 +1,29 @@
+.BackPage{
+    font-size: 24px;
+    font-weight: bold;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+    left: 65px;
+    cursor: pointer;
+}
+
+.PokemonArea{
+    margin: 85px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media(max-width: 620px){
+    .BackPage{
+        left: 30px;
+        top: 30px;
+    }
+
+    .PokemonArea{
+        margin: 30px auto;
+    }
+}
